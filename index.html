@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+
+        <!-- css input  -->
+        <link rel="stylesheet" href="output.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body 
+    class="m-0 p-0 box-border font-sans flex justify-center items-center min-h-[100vh] bg-[url('images/background.jpg')] bg-cover bg-center">
+        <div id="container" class="relative w-[400px] h-[160px] bg-white/[.1] backdrop-blur-[30px] rounded-[16px] p-[20px] text-white border border-gray-500">
+            <h1 id="greet"
+            class="p-2 text-[20px] font-[500] text-center">nurullah</h1>
+            <div id="search-box" class="relative top-3 w-full h-[55px]  rounded-[10px] flex items-center pb-6 bottom-3 mb-11">
+                <i class='bx bxs-map text-[28px] absolute left-[10px]'></i>
+                <input type="text" placeholder="Enter your location" id="searchbox"
+                class="absolute w-full h-full bg-transparent outline-none border border-gray-500 rounded-[10px] text-[22px] text-white font-[500] capitalize px-10 py-7 placeholder:text-white placeholder:text-center">
+                <button id="btn" class="bx bx-search absolute right-0 h-[100%] w-[40px] border-none outline-none text-[28px] text-white p-[0px 40px 0px 5px]"></button>
+            </div>
+            <div id="wthr" class="hidden">
+                <div id="weather-box" class=" text-center mx-0 my-10 justify-center items-center pb-4">
+                    <div id="box" class="">
+                        <div id="weatherinfo">
+                            <div id="weather">
+                                <img src="images/cloud.png" id="weathericon" class="w-[60%] mx-auto">
+                                <p id="temperature" class="relative text-[74px] leading-none font-[600] m-[20px 0px 6px -30px]">0 <span class=" absolute text-[24px] ml-1">°C</span></p>
+                                <p id="description" class="text-2xl font-[500] capitaliz">Broken Clouds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather-details" class="flex absolute left-0 bottom-10 w-full py-0 px-5 pt-4">
+                    <div id="humidity" class="flex items-center w-[50%] pl-5 justify-start">
+                        <i class='bx bx-water text-[56px] mr-[10px]'></i>
+                        <div id="text">
+                            <div id="infohumidity">
+                                <span id="humi" class="inline-block text-[22px] font-[500]">0%</span>
+                            </div>
+                            <p class="text-[14px] font-[500]">Humidity</p>
+                        </div>
+                    </div>
+                    <div id="Wind" class="flex items-center w-[50%] pr-5 justify-end">
+                        <i class='bx bx-wind text-[56px] mr-[10px]' ></i>
+                        <div id="text">
+                            <div id="infowind">
+                                <span id="win" class="inline-block text-[22px] font-[500]">0 Km/h</span>
+                            </div>
+                            <p class="text-[14px] font-[500]">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="not-found" class="absolute top-0 left-0 w-full mt-[130px] text-cente hidden">
+                <div id="box" class="text-center ">
+                    <img src="images/404.png" alt="" class="w-[65%] mt-6 ml-10">
+                    <h2 class="text-[22px] mt-3 font-[500]">Oops! Location not found!</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="NRcode.js"></script>
+</html>
