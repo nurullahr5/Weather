@@ -8,7 +8,7 @@ const container = document.getElementById("container");
 const box = document.getElementById("box");
 
 /**
- * @param {string} city City name
+ * @param {string} city
  * @returns {Promise<void>}
  */
 async function checkWeather(city) {
